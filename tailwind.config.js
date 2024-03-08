@@ -12,7 +12,8 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         barlowbold: ['vessel-barlow-bold', 'sans-serif'],
         roboto: ['vessel-roboto', 'sans-serif'],
-        robotobold: ['vessel-roboto-bold', 'sans-serif']
+        robotobold: ['vessel-roboto-bold', 'sans-serif'],
+        'linx-neue-regular': ['linx-neue-regular', 'sans-serif']
       },
       colors: {
         'linx-red': '#c80419',
