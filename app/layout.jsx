@@ -8,26 +8,24 @@ import ScrollIndicator from '../components/scroll/ScrollIndicator';
 
 const RootLayout = ({ children }) => {
   return (
-    <>
+    <html lang="en">
       <Head>
         <title>Linxto | Plan</title>
         <meta name="description" content="Plan" />
       </Head>
-    <html lang="en">
       <body>
         <div className="main">
           <div className="linxbg" />
         </div>
 
         <main className="app">
-        <Nav />
+          <Nav />
           <ScrollIndicator /> 
           <Transition>{children}</Transition>
           <Footer />
         </main>
       </body>
     </html>
-  </>
   );
 };
 
