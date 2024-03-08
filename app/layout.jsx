@@ -5,10 +5,6 @@ import Footer from "../components/layout/Footer";
 import Head from 'next/head';
 import ScrollIndicator from '../components/scroll/ScrollIndicator';
 
-export const Metadata = {
-  title: "Linxto | Plan",
-  description: "Plan",
-};
 
 const RootLayout = ({ children }) => {
   return (
