@@ -1,15 +1,14 @@
 import React from "react";
 import Greeting from "../sections/Greeting";
-import ScrollIndicator from "../scroll/ScrollIndicator";
 import ScrollRedLine from "../scroll/ScrollRedLine";
-
+import WhatWeDo from "../sections/WhatWeDo";
 
 export const Main = () => {
   return (
     <>
       <ScrollRedLine />
         <Greeting />
-        <Greeting />
+        <WhatWeDo />
         <Greeting />
 
     </>

@@ -114,7 +114,7 @@
 }
 
 .linx_welcome {
-  @apply font-linx-neue-regular text-4xl text-linx-black leading-10;
+  @apply font-linx-neue-regular text-3xl text-linx-black leading-10;
 }
 
 .linx_addresses {
