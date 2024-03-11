@@ -1,10 +1,10 @@
 'use client'
-import { Welcome } from "../components/heros/Welcome";
+import { Main } from "../components/heros/Main";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Welcome />
+      <Main />
     </main>
   );
 }

@@ -9,7 +9,7 @@ const ScrollRedLine = () => {
   useEffect(() => {
     // Check if window is defined (to avoid server-side rendering errors)
     if (typeof window !== 'undefined') {
-      setScrollY(window.innerHeight / 2); // Initialize with half the screen height
+      setScrollY(0);
       setInitialized(true);
     }
   }, []);
@@ -39,9 +39,10 @@ const ScrollRedLine = () => {
         width: '4px',
         background: 'red',
         position: 'fixed',
-        top: 0,
-        left: '50%', // Position the line at the center of the screen
-        transform: 'translateX(-50%)', // Adjust to center the line horizontally
+        top: '100px', 
+        left: '20%', // Position the line at the center of the screen
+        transform: 'translateX(-20%)', // Adjust to center the line horizontally
+        zIndex: 1, // Ensure this is lower than the z-index of the navigation bar
       }}
       animate={controls}
     />

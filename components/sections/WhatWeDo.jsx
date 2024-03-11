@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Greeting() {
+export default function WhatWeDo() {
   return (
     <>
       <div className="flex flex-col items-center justify-center h-[calc(100vh-450px)] linx_welcome">
