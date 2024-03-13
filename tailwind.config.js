@@ -13,7 +13,8 @@ module.exports = {
         barlowbold: ['vessel-barlow-bold', 'sans-serif'],
         roboto: ['vessel-roboto', 'sans-serif'],
         robotobold: ['vessel-roboto-bold', 'sans-serif'],
-        'linx-neue-regular': ['linx-neue-regular', 'sans-serif']
+        'ppneuebit-regular': ['PPNeueBit-Regular', 'sans-serif'],
+        'ppneueMontreal-bold': ['PPNeueMontreal-Bold', 'sans-serif'],
       },
       colors: {
         'linx-red': '#c80419',

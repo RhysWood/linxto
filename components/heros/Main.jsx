@@ -10,7 +10,6 @@ export const Main = () => {
         <Greeting />
         <WhatWeDo />
         <Greeting />
-
     </>
   );
 };
