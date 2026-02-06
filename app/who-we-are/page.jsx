@@ -396,7 +396,7 @@ const WhoWeAre = () => {
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center border-l-4 border-linx-red">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Call Us</h3>
                 <a href="tel:+447872823368" className="text-3xl font-bold text-linx-red hover:opacity-80 transition-opacity">
-                  0844 98 000 98
+                  Click Here
                 </a>
               </div>
             </StaggerItem>
