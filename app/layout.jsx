@@ -1,4 +1,4 @@
-import "/styles/globals.css";
+import "../styles/globals.css";
 import Transition from "./transition";
 import Nav from "../components/layout/Nav";
 import Footer from "../components/layout/Footer";
