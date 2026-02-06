@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="w-full text-white mt-20" style={{ backgroundColor: '#C41E3A' }}>
+    <footer className="w-full bg-linx-red text-white mt-20 rounded-t-3xl">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -12,7 +12,7 @@ const Footer = () => {
               Linx-to Project Controls Ltd
             </h3>
             <p className="opacity-90 mb-4 leading-relaxed">
-              Professional project controls, forensic delay analysis, and expert witness services 
+              Evidence-based project controls, forensic delay analysis, and expert witness services
               for construction and infrastructure projects.
             </p>
             <div className="flex gap-4">
@@ -40,13 +40,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="opacity-80 hover:opacity-100 transition-opacity">
-                  About Us
+                <Link href="/who-we-are" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Who We Are
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="opacity-80 hover:opacity-100 transition-opacity">
-                  Services
+                <Link href="/what-we-do" className="opacity-80 hover:opacity-100 transition-opacity">
+                  What We Do
+                </Link>
+              </li>
+              <li>
+                <Link href="/our-approach" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Our Approach
                 </Link>
               </li>
               <li>
@@ -60,11 +65,32 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="text-lg font-bold mb-4">Our Services</h4>
-            <ul className="space-y-2 text-sm opacity-80">
-              <li>Project Controls</li>
-              <li>Forensic Delay Analysis</li>
-              <li>Expert Witness</li>
-              <li>Claims Support</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/what-we-do" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Project Controls
+                </Link>
+              </li>
+              <li>
+                <Link href="/what-we-do" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Forensic Delay Analysis
+                </Link>
+              </li>
+              <li>
+                <Link href="/what-we-do" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Expert Witness
+                </Link>
+              </li>
+              <li>
+                <Link href="/what-we-do" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Claims Support
+                </Link>
+              </li>
+              <li>
+                <Link href="/what-we-do" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Dispute Avoidance
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -73,16 +99,8 @@ const Footer = () => {
         <div className="border-t border-white border-opacity-30 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="opacity-80 text-sm">
-              © {new Date().getFullYear()} Linx-to Project Controls Ltd. All rights reserved.
+              &copy; {new Date().getFullYear()} Linx-to Project Controls Ltd. All rights reserved.
             </p>
-            {/* <div className="flex gap-6 text-sm">
-              <Link href="/privacy" className="opacity-80 hover:opacity-100 transition-opacity">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="opacity-80 hover:opacity-100 transition-opacity">
-                Terms of Service
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>
