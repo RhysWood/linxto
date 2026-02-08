@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FadeInSection, StaggerContainer, StaggerItem, AnimatedArrow } from '../../components/animations/ScrollAnimations';
 
 export const metadata = {
@@ -26,6 +27,27 @@ const WhatWeDo = () => {
           </p>
         </section>
       </FadeInSection>
+
+      {/* Cinematic Image Banner */}
+      <div
+        className="full-bleed relative h-[45vh] min-h-[300px] overflow-hidden -my-1"
+        style={{ clipPath: 'polygon(0 8%, 100% 0%, 100% 92%, 0% 100%)' }}
+      >
+        <Image
+          src="/assets/img/Hero_Splash.jpg"
+          alt="Active construction site with crane and formwork"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          quality={80}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+        <div className="relative z-10 h-full flex items-center justify-center px-4">
+          <p className="text-white text-2xl md:text-4xl font-bold text-center drop-shadow-lg max-w-3xl tracking-tight">
+            From Planning to Completion &mdash; Every Detail Covered
+          </p>
+        </div>
+      </div>
 
       {/* Project Controls & Planning */}
       <section className="w-full bg-gray-50 py-16">

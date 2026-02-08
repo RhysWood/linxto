@@ -55,14 +55,106 @@ const WhoWeAre = () => {
         </div>
       </section>
 
-      {/* Vision & Mission */}
+      {/* Image Divider */}
+      <div className="full-bleed relative h-[35vh] min-h-[250px] overflow-hidden">
+        <Image
+          src="/assets/img/hero2_Splash.jpg"
+          alt="Aerial view of construction earthworks site"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          quality={80}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50" />
+        <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 text-center">
+          <p className="text-white/80 text-sm font-semibold uppercase tracking-[0.25em] mb-3">Our Motto</p>
+          <blockquote className="text-white text-3xl md:text-5xl font-bold drop-shadow-lg max-w-3xl tracking-tight">
+            &ldquo;Evidence Speaks Louder&rdquo;
+          </blockquote>
+        </div>
+      </div>
+
+      {/* Founder */}
       <section className="w-full py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <FadeInSection>
+            <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Our Founder</h2>
+          </FadeInSection>
+
+          <FadeInSection>
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border-2 border-linx-red">
+              <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
+                {/* Photo */}
+                <div className="flex-shrink-0 text-center">
+                  <Image
+                    src="/assets/img/Ray_Wood.jpeg"
+                    alt="Ray Wood - Founder of Linx-to Project Controls"
+                    width={220}
+                    height={220}
+                    className="rounded-full object-cover shadow-lg border-4 border-linx-red"
+                  />
+                  <h3 className="text-2xl font-bold text-gray-900 mt-5">Ray Wood</h3>
+                  <p className="text-linx-red font-semibold">Founder &amp; Director</p>
+                </div>
+
+                {/* Career Highlights & Bio */}
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-linx-red mb-4">Career Highlights</h4>
+                  <ul className="space-y-3 text-gray-700 mb-8">
+                    <li className="flex items-start">
+                      <span className="mr-3 mt-1 text-linx-red font-bold">&#9656;</span>
+                      <span>30+ years&apos; experience in the construction and engineering industries</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-3 mt-1 text-linx-red font-bold">&#9656;</span>
+                      <span>An electrical engineer who became a Project Planner and Planning Manager</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-3 mt-1 text-linx-red font-bold">&#9656;</span>
+                      <span>Specialisms include Expert Witness on matters of scheduling and delay, forensic analysis, post-contract claims reviews, recovery scheduling and management for delayed projects</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-3 mt-1 text-linx-red font-bold">&#9656;</span>
+                      <span>Commissioned across a broad spectrum of projects ranging from piling, tunnelling and pipelines to water treatment plants, wind and power generation and high and low rise buildings</span>
+                    </li>
+                  </ul>
+
+                  <h4 className="text-xl font-bold text-linx-red mb-4">Bio</h4>
+                  <div className="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      Ray started his career in the construction industry at the coalface qualifying as an electrician
+                      and then commissioning engineer on complex process treatment plants from which he has advanced
+                      gaining experience in multiple sectors including M&amp;E, Civil Engineering, Building, Water,
+                      Rail, Power and Energy. All this experience he applies to his role as Expert Witness in
+                      scheduling and analysis of delay on projects in the UK, Europe and internationally.
+                    </p>
+                    <p>
+                      Ray&apos;s engineering background and experience give him a unique insight into projects of many
+                      kinds and his focus on detail facilitates his forensic investigation and analytical abilities.
+                      Ray is also known for his ability to distil complex issues into an easily understood analysis
+                      and expert report.
+                    </p>
+                    <p>
+                      Ray has been instructed as the named Expert for scheduling matters on projects under the JCT,
+                      FIDIC and NEC forms of contract and presented and critiqued the various techniques of delay
+                      analysis utilising scheduling software such as Primavera P6, Asta Powerproject and Microsoft Project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Vision & Mission */}
+      <section className="w-full bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto px-4">
           <StaggerContainer className="grid md:grid-cols-2 gap-12" staggerDelay={0.2}>
             <StaggerItem>
               <div>
                 <h2 className="text-4xl font-bold mb-6 text-linx-red">Our Vision</h2>
-                <div className="bg-gradient-to-br from-gray-50 to-red-50 rounded-2xl p-10 shadow-lg border-2 border-linx-red h-full">
+                <div className="bg-gradient-to-br from-white to-red-50 rounded-2xl p-10 shadow-lg border-2 border-linx-red h-full">
                   <p className="text-2xl font-semibold text-gray-800 leading-relaxed">
                     To be the trusted partner of choice for project controls and forensic delay
                     analysis, recognised for technical excellence, professional integrity, and
@@ -101,47 +193,6 @@ const WhoWeAre = () => {
               </div>
             </StaggerItem>
           </StaggerContainer>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="w-full bg-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <FadeInSection>
-            <div className="bg-linx-red text-white rounded-3xl p-12">
-              <h2 className="text-3xl font-bold mb-8 text-center">Our Team</h2>
-              <p className="text-xl opacity-90 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-                Our team comprises experienced planning engineers, schedulers, and delay analysis experts
-                with extensive backgrounds in construction project management and dispute resolution.
-              </p>
-              <StaggerContainer className="grid md:grid-cols-2 gap-6">
-                <StaggerItem>
-                  <TeamStrength
-                    title="Qualified Professionals"
-                    description="Degree-qualified engineers and planners with professional certifications and memberships"
-                  />
-                </StaggerItem>
-                <StaggerItem>
-                  <TeamStrength
-                    title="Industry Veterans"
-                    description="Decades of combined experience across major UK and international construction projects"
-                  />
-                </StaggerItem>
-                <StaggerItem>
-                  <TeamStrength
-                    title="Expert Witnesses"
-                    description="Proven track record providing testimony in arbitration, adjudication, and litigation"
-                  />
-                </StaggerItem>
-                <StaggerItem>
-                  <TeamStrength
-                    title="Forensic Specialists"
-                    description="Advanced expertise in delay analysis methodologies and claims preparation"
-                  />
-                </StaggerItem>
-              </StaggerContainer>
-            </div>
-          </FadeInSection>
         </div>
       </section>
 
@@ -368,8 +419,49 @@ const WhoWeAre = () => {
         </div>
       </section>
 
-      {/* Be Part of the Team */}
+      {/* Team */}
       <section className="w-full bg-gray-50 py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <FadeInSection>
+            <div className="bg-linx-red text-white rounded-3xl p-12">
+              <h2 className="text-3xl font-bold mb-8 text-center">Our Team</h2>
+              <p className="text-xl opacity-90 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
+                Our team comprises experienced planning engineers, schedulers, and delay analysis experts
+                with extensive backgrounds in construction project management and dispute resolution.
+              </p>
+              <StaggerContainer className="grid md:grid-cols-2 gap-6">
+                <StaggerItem>
+                  <TeamStrength
+                    title="Qualified Professionals"
+                    description="Degree-qualified engineers and planners with professional certifications and memberships"
+                  />
+                </StaggerItem>
+                <StaggerItem>
+                  <TeamStrength
+                    title="Industry Veterans"
+                    description="Decades of combined experience across major UK and international construction projects"
+                  />
+                </StaggerItem>
+                <StaggerItem>
+                  <TeamStrength
+                    title="Expert Witnesses"
+                    description="Proven track record providing testimony in arbitration, adjudication, and litigation"
+                  />
+                </StaggerItem>
+                <StaggerItem>
+                  <TeamStrength
+                    title="Forensic Specialists"
+                    description="Advanced expertise in delay analysis methodologies and claims preparation"
+                  />
+                </StaggerItem>
+              </StaggerContainer>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Be Part of the Team */}
+      <section className="w-full py-16">
         <div className="max-w-6xl mx-auto px-4">
           <AnimatedArrow direction="down" />
 

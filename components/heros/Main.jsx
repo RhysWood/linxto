@@ -1,18 +1,29 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FadeInSection, StaggerContainer, StaggerItem, AnimatedArrow } from '../animations/ScrollAnimations';
 
 const Main = () => {
   return (
     <section className="w-full flex-center flex-col">
-      <div className="w-full max-w-6xl mx-auto px-4 py-20">
-        {/* Hero Section */}
-        <FadeInSection className="text-center mb-16">
-          <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
+      {/* Full-Bleed Hero */}
+      <div className="full-bleed relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden -mt-8">
+        <Image
+          src="/assets/img/hero3_splash.jpg"
+          alt="Modern skyscraper under construction with cranes against blue sky"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+          quality={85}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+        <FadeInSection className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
             Expert Project Controls &
-            <span className="block text-linx-red">Forensic Delay Analysis</span>
+            <span className="block text-linx-red drop-shadow-lg">Forensic Delay Analysis</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed drop-shadow">
             Evidence-based project planning, scheduling, forensic delay analysis,
             and expert witness services for construction and infrastructure projects.
           </p>
@@ -20,12 +31,14 @@ const Main = () => {
             <Link href="/contact" className="px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl text-white bg-linx-red hover:opacity-90">
               Get in Touch
             </Link>
-            <Link href="/our-approach" className="bg-white hover:bg-gray-50 text-gray-900 px-8 py-4 rounded-full text-lg font-semibold border-2 border-gray-300 transition-all duration-300">
+            <Link href="/our-approach" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold border-2 border-white/30 transition-all duration-300">
               Our Approach
             </Link>
           </div>
         </FadeInSection>
+      </div>
 
+      <div className="w-full max-w-6xl mx-auto px-4 py-20">
         {/* Core Pages Navigation */}
         <StaggerContainer className="grid md:grid-cols-3 gap-8 mb-20">
           <StaggerItem>

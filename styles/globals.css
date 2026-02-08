@@ -4,6 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
