@@ -28,34 +28,7 @@ const WhoWeAre = () => {
         </section>
       </FadeInSection>
 
-      {/* Company Overview */}
-      <section className="w-full bg-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <FadeInSection>
-            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-lg border-l-4 border-linx-red">
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  Linx-to Project Controls Ltd is a Manchester-based consultancy providing expert services in
-                  project planning, scheduling, forensic delay analysis, and expert witness testimony for
-                  the construction and infrastructure sectors.
-                </p>
-                <p>
-                  We work with contractors, owners, legal teams, and project stakeholders throughout the
-                  United Kingdom and internationally to deliver objective, evidence-based analysis that
-                  supports successful project delivery and dispute resolution.
-                </p>
-                <p>
-                  Our approach combines deep technical expertise with clear communication, ensuring complex
-                  project controls and delay analysis issues are understood by all parties, from
-                  technical teams to legal professionals and decision-makers.
-                </p>
-              </div>
-            </div>
-          </FadeInSection>
-        </div>
-      </section>
-
-      {/* Image Divider */}
+      {/* Image Divider - Motto */}
       <div className="full-bleed relative h-[35vh] min-h-[250px] overflow-hidden">
         <Image
           src="/assets/img/hero2_Splash.jpg"
@@ -147,8 +120,51 @@ const WhoWeAre = () => {
         </div>
       </section>
 
-      {/* Vision & Mission */}
+      {/* About Linx-to */}
       <section className="w-full bg-gray-50 py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <StaggerContainer className="grid md:grid-cols-2 gap-12 items-center" staggerDelay={0.15}>
+            <StaggerItem>
+              <div>
+                <h2 className="text-4xl font-bold mb-6 text-linx-red">
+                  About Linx-to
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Linx-to Project Controls Ltd provides expert project planning, scheduling, forensic delay
+                  analysis, and expert witness services for the construction and infrastructure sectors. We work
+                  with contractors, owners, legal teams, and stakeholders across the UK and internationally,
+                  combining deep technical expertise with clear communication to support successful project
+                  delivery and dispute resolution.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  The name &quot;Linx-to&quot; represents our core purpose: <strong>creating connections</strong>.
+                  We link planning to execution, theory to practice, and stakeholders to solutions.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Our logo features three red diamonds&mdash;the universal symbol from Gantt charts representing
+                  <strong> critical path milestones and final project deadlines</strong>. The bold red colour
+                  emphasises the critical nature of these milestones and reflects our commitment to
+                  helping you hit your deadlines.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="bg-white rounded-2xl p-12 shadow-lg flex justify-center">
+                <Image
+                  src="/assets/linxto_logo.png"
+                  alt="Linx-to Project Controls Logo"
+                  width={300}
+                  height={150}
+                  className="object-contain"
+                />
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+        </div>
+      </section>
+
+      {/* Vision & Mission */}
+      <section className="w-full py-16">
         <div className="max-w-6xl mx-auto px-4">
           <StaggerContainer className="grid md:grid-cols-2 gap-12" staggerDelay={0.2}>
             <StaggerItem>
@@ -197,7 +213,7 @@ const WhoWeAre = () => {
       </section>
 
       {/* Expertise */}
-      <section className="w-full py-16">
+      <section className="w-full bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto px-4">
           <FadeInSection>
             <h2 className="text-4xl font-bold mb-8 text-center text-gray-900">Our Expertise</h2>
@@ -250,7 +266,7 @@ const WhoWeAre = () => {
       </section>
 
       {/* Values */}
-      <section className="w-full bg-gray-50 py-16">
+      <section className="w-full py-16">
         <div className="max-w-6xl mx-auto px-4">
           <AnimatedArrow direction="down" />
 
@@ -308,7 +324,7 @@ const WhoWeAre = () => {
       </section>
 
       {/* Mottos */}
-      <section className="w-full py-16">
+      <section className="w-full bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto px-4">
           <FadeInSection>
             <h2 className="text-4xl font-bold mb-8 text-linx-red">Our Mottos</h2>
@@ -337,42 +353,6 @@ const WhoWeAre = () => {
                 motto="Clarity Creates Confidence"
                 description="When stakeholders understand the schedule, they can make better decisions and work more effectively together."
               />
-            </StaggerItem>
-          </StaggerContainer>
-        </div>
-      </section>
-
-      {/* Name & Logo */}
-      <section className="w-full bg-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <StaggerContainer className="grid md:grid-cols-2 gap-12 items-center" staggerDelay={0.15}>
-            <StaggerItem>
-              <div>
-                <h2 className="text-4xl font-bold mb-6 text-linx-red">
-                  Our Name &amp; Logo
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  The name &quot;Linx-to&quot; represents our core purpose: <strong>creating connections</strong>.
-                  We link planning to execution, theory to practice, and stakeholders to solutions.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Our logo features three red diamonds&mdash;the universal symbol from Gantt charts representing
-                  <strong> critical path milestones and final project deadlines</strong>. The bold red colour
-                  emphasises the critical nature of these milestones and reflects our commitment to
-                  helping you hit your deadlines.
-                </p>
-              </div>
-            </StaggerItem>
-            <StaggerItem>
-              <div className="bg-white rounded-2xl p-12 shadow-lg flex justify-center">
-                <Image
-                  src="/assets/linxto_logo.png"
-                  alt="Linx-to Project Controls Logo"
-                  width={300}
-                  height={150}
-                  className="object-contain"
-                />
-              </div>
             </StaggerItem>
           </StaggerContainer>
         </div>
