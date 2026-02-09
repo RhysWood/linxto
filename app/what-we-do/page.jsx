@@ -258,31 +258,6 @@ const WhatWeDo = () => {
               />
             </StaggerItem>
           </StaggerContainer>
-        </div>
-      </section>
-
-      <AnimatedArrow direction="down" />
-
-      {/* Additional Services */}
-      <section className="w-full bg-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <FadeInSection>
-            <h2 className="text-4xl font-bold mb-4 text-linx-red">Additional Services</h2>
-          </FadeInSection>
-          <StaggerContainer className="grid md:grid-cols-2 gap-6 mb-12">
-            <StaggerItem>
-              <ServiceCard
-                title="Training &amp; Workshops"
-                description="Project controls and delay analysis training for teams. Tailored sessions covering scheduling best practice, claims awareness, and record-keeping."
-              />
-            </StaggerItem>
-            <StaggerItem>
-              <ServiceCard
-                title="Independent Schedule Review"
-                description="Third-party assessment of project schedules and controls. Identify risks, issues, and opportunities for improvement."
-              />
-            </StaggerItem>
-          </StaggerContainer>
 
           {/* Tools */}
           <FadeInSection className="text-center">
